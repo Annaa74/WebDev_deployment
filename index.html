@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Global Thali</title>
+    <style>
+        body {
+            background: url('foodback.jpg') no-repeat center center fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #ff6347;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fff;
+        }
+        .navbar .menu {
+            list-style: none;
+            display: flex;
+            margin: 0;  }
+        .navbar .menu li {
+            margin: 0 15px;
+        }
+        .navbar .menu li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar .menu li a:hover {
+            background-color: #fff;
+            color: #ff6347;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ff6347;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fff;
+        }
+        .navbar .menu {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar .menu li {
+            margin: 0 15px;
+        }
+        .navbar .menu li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar .menu li a:hover {
+            background-color: #fff;
+            color: #ff6347;
+            border-radius: 5px;
+        }
+        .navbar .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .search-bar input[type="text"] {
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+        .navbar .search-bar button {
+            background-color: #fff;
+            color: #ff6347;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 3px;
+        }
+        .navbar .search-bar button:hover {
+            background-color: #ff6347;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .food-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            overflow: hidden;
+            width: 300px;
+            flex: 1;
+            transition: transform 0.3s;
+        }
+        .food-card:hover {
+            transform: scale(1.05);
+        }
+        .food-card img {
+            width: 100%;
+            height: auto;
+        }
+        .food-info {
+            padding: 15px;
+            text-align: center;
+        }
+        .food-info h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #ff6347;
+        }
+        .food-info p {
+            font-size: 1em;
+            color: #666;
+        }
+        .food-actions {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            border-top: 1px solid #eee;
+        }
+        .food-actions button {
+            background-color: #ff6347;
+            border: none;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+        .food-actions button:hover {
+            background-color: #e55335;
+        }
+        .food-rating {
+            display: flex;
+            align-items: center;
+        }
+        .food-rating span {
+            margin-left: 5px;
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">The Global Thali</div>
+    <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+         
+    </ul>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="button">Search</button>
+    </div>
+</div>
+
+<!-- Page content for demonstration -->
+<div style="padding: 20px; text-align: center;">
+    <h1>Welcome to The Global Thali</h1>
+    <b><p>Explore the diverse flavors from around the world with a touch of Indian authenticity.</p></b>
+</div>
+<div class="container">
+    <div class="food-card">
+        <img src="italian-food.jpg" alt="Italian Food">
+        <div class="food-info">
+            <h2>Italian Pasta Thali </h2>
+            <p>Delicious homemade pasta with a rich tomato sauce and fresh basil.</p>
+        </div>
+        <div class="food-actions">
+            <button>Add to Cart</button>
+            <div class="food-rating">
+                <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                <span>4.5</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="food-card">
+        <img src="indian-food.jpg" alt="Indian Food">
+        <div class="food-info">
+            <h2>Indian Curry Thali</h2>
+            <p>Aromatic curry with a blend of spices, served with fluffy rice.</p>
+        </div>
+        <div class="food-actions">
+            <button>Add to Cart</button>
+            <div class="food-rating">
+                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span>5.0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="food-card">
+        <img src="mexican-food.jpg" alt="Mexican Food">
+        <div class="food-info">
+            <h2>Mexican Tacos Thali</h2>
+            <p>Spicy tacos with a tangy salsa and creamy avocado topping.</p>
+        </div>
+        <div class="food-actions">
+            <button>Add to Cart</button>
+            <div class="food-rating">
+                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span>4.8</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="food-card">
+        <img src="japanese-food.jpg" alt="Japanese Food">
+        <div class="food-info">
+            <h2>Sushi Thali</h2>
+            <p>Assorted sushi with fresh fish, sticky rice, and a variety of sauces.</p>
+        </div>
+        <div class="food-actions">
+            <button>Add to Cart</button>
+            <div class="food-rating">
+                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span>4.9</span>
+            </div>
+        </div>
+    </div>
+</div>  
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Global Thali - About Us</title>
+  <style>
+    
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      background: url('foodback.jpg') no-repeat center center fixed;
+      background-size: cover;
+     
+
+    }
+ 
+    body::before { 
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.5);  
+      z-index: -1;
+    }
+
+    
+    .header {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      animation: header-gradient 10s ease infinite alternate;
+      
+    }
+
+    @keyframes header-gradient {
+      from { background-position: 0 0; }
+      to { background-position: 100% 0; }
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #6E1E1E ;
+      font-weight: bold; 
+      font-family:  Georgia, serif; 
+       
+    }
+
+    .header nav a {
+      color: #ff6f61;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    .header nav a:hover {
+      color: #ffdeeb;
+    }
+
+    /* Main Section Styling */
+    .main {
+      padding: 20px;
+    }
+
+    .about-us {
+      padding: 20px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      animation: gradient 10s ease-in-out infinite alternate;
+    }
+
+    @keyframes gradient {
+      from { background-position: 0 0; }
+      to { background-position: 100% 0; }
+    }
+
+    .about-us h2 {
+      margin-top: 0;
+      color: #ff6f61;
+    }
+
+    .about-us p {
+      color: #333;
+      font-weight: lighter;
+    }
+
+    .about-us p:first-of-type {
+      animation: text-pulse 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes text-pulse {
+      from { opacity: 1; }
+      to { opacity: 0.8; }
+    }
+
+    .about-us p:nth-of-type(2) {
+      animation: text-slide-in 2s ease-in forwards;
+    }
+
+    @keyframes text-slide-in {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Contact Us Section Styling */
+    .contact-us, .feedback {
+      margin-top: 40px;
+      padding: 20px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-us h2, .feedback h2 {
+      color: #ff6f61;
+    }
+
+    .contact-us ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact-us li {
+      margin-bottom: 10px;
+    }
+
+    .contact-us a {
+      color: #ff6f61;
+      text-decoration: none;
+    }
+
+    .contact-us a:hover {
+      text-decoration: underline;
+    }
+
+    
+    .feedback form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .feedback label {
+      margin: 10px 0 5px;
+    }
+
+    .feedback input, .feedback textarea {
+      padding: 10px;
+      border: 2px solid #ffafbd;
+      border-radius: 5px;
+      font-size: 1em;
+      background: #fff0f5;
+    }
+
+    .feedback input:focus, .feedback textarea:focus {
+      outline: none;
+      border-color: #ff6f61;
+      box-shadow: 0 0 5px rgba(255, 175, 189, 0.2);
+    }
+
+    .feedback button {
+      margin-top: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      color: #fff;
+      background: linear-gradient(90deg, #ffafbd, #ffc3a0);
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .feedback button:hover {
+      background: linear-gradient(90deg, #ffc3a0, #ffafbd);
+    }
+ 
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #ff9a9e;
+      color: #fff;
+      border-top: 5px solid #fad0c4;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>The Global Thali</h1>
+    <nav>
+      <center><a href="try.html">Home</a></center>
+   
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="about-us">
+      <h2>About The Global Thali</h2>
+      <p>
+        The Global Thali is an Indian-based food company with a passion for bringing the taste of the world to your plate. We believe that food is a universal language, and we're on a mission to help you explore the diverse culinary traditions from all corners of the globe.
+      </p>
+
+      <p>
+        Our journey began with a simple idea: to share the rich flavors and vibrant cultures of different countries through the concept of a "thali." A thali is a traditional Indian platter that features a variety of smaller dishes, offering a complete and balanced meal. We take inspiration from this concept to curate unique thalis that represent the signature dishes and culinary specialties of various regions.
+      </p>
+    </section>
+
+    <section class="contact-us">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Feel free to reach out with any questions, feedback, or suggestions.</p>
+      <ul>
+        <li>Email: <a href="mailto:contact@theglobalthali.com">contact@theglobalthali.com</a></li>
+        <li>Phone: +91 1234567890 </li>
+      </ul>
+    </section>
+
+    <section class="feedback">
+      <h2>Leave Your Feedback</h2>
+      <form action="feedback.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; The Global Thali. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
